@@ -3,8 +3,7 @@ from Vkinter import Vkinter
 import requests
 
 API = 'https://api.vk.com/method'
-#Для создания экземпляра класса вносим свой токен
-token = ''
+token = 'Введите свой токен'
 
 class Test(unittest.TestCase):
 
@@ -13,7 +12,7 @@ class Test(unittest.TestCase):
     
     def test_get_user_info(self):
 
-        self.assertEqual('Здесь свой vk id', self.user.get_user_info(self.user.user_id)['id'])
+        self.assertEqual('Введите свой vk id', self.user.get_user_info(self.user.user_id)['id'])
 
     def test_search_for_users(self):
 
